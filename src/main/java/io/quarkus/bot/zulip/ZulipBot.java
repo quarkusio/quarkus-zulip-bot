@@ -9,16 +9,12 @@ import javax.inject.Inject;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.quarkus.bot.zulip.commands.Command;
 import io.quarkus.bot.zulip.payload.OutgoingWebhookPayload;
 import io.quarkus.bot.zulip.payload.OutgoingWebhookResponse;
 
 @Path("/")
 public class ZulipBot {
-
-    @Inject
-    ObjectMapper objectMapper;
 
     @Inject
     Instance<Command> commands;
