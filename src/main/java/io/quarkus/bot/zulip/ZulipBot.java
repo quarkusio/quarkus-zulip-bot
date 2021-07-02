@@ -39,7 +39,7 @@ public class ZulipBot {
                     return command.process(payload);
                 }
             }
-            zulip.addReaction(payload.message.id, "-1");
+            zulip.addReaction(payload.message.id, "oh_no");
             String contents = String.format("@**%s** Sorry, I couldn't understand your command. Type `@%s help` if you need assistance",
                                             payload.message.sender_full_name, payload.bot_full_name);
             return new OutgoingWebhookResponse(contents);
