@@ -2,6 +2,8 @@ package io.quarkus.bot.zulip.payload;
 
 import java.util.List;
 
+import com.fasterxml.jackson.databind.JsonNode;
+
 /**
  * This payload is defined in https://zulip.com/api/outgoing-webhooks#outgoing-webhook-format
  */
@@ -27,7 +29,7 @@ public class OutgoingWebhookPayload {
 
         public String content;
 
-        public String display_recipient;
+        public JsonNode display_recipient;
 
         public int id;
 
