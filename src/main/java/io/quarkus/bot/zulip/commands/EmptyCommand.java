@@ -1,6 +1,6 @@
 package io.quarkus.bot.zulip.commands;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 
 import io.quarkus.bot.zulip.payload.OutgoingWebhookPayload;
 import io.quarkus.bot.zulip.payload.OutgoingWebhookResponse;
